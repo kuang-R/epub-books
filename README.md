@@ -45,6 +45,13 @@ epub其实是一个很不完善的规约，整个协议就是个草台班子，�
 ![02](/imgs/README%2002.png)
 
 #### 竖排
+想要将文件竖排，但是效果一般。可能是不符合平时中文的阅读习惯，姑且记录下方法。
+``` html
+<!-- 在opf文件中设定 -->
+<spine page-progression-direction="rtl” />
+<!-- 添加css样式 -->
+<body style="-epub-writing-mode: vertical-rl;">
+```
 
 ## Markdown语法
 
